@@ -5,12 +5,12 @@
 | toasterpwn | Quals     | N/A      | N/A      | N/A    |
 
 Quals times:
-- 1. **ssparrow** — 7.17 — 99
-- 2. **ItsIronicIInsist** — 9.56 — 99
-- 3. **Sly** — 11.38 — 99
-- 4. **Slidybat** — 12.57 — 99
-- 5. **hashkitten** — 13.56 — 99
-- 6. **Gorg** — 14.06 — 99
+- 1\. **ssparrow** — 7.17 — 99
+- 2\. **ItsIronicIInsist** — 9.56 — 99
+- 3\. **Sly** — 11.38 — 99
+- 4\. **Slidybat** — 12.57 — 99
+- 5\. **hashkitten** — 13.56 — 99
+- 6\. **Gorg** — 14.06 — 99
 
 <details>
   <summary>(SPOILER) Writeup</summary>

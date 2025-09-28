@@ -3,14 +3,12 @@
 Public release for the BSides Canberra 2025 Speedrun CTF.
 
 # Qualifiers Scores
-- 1. **ssparrow** — 7.17 — 99
-- 2. **ItsIronicIInsist** — 9.56 — 99
-- 3. **Sly** — 11.38 — 99
-- 4. **Slidybat** — 12.57 — 99
-- 5. **hashkitten** — 13.56 — 99
-- 6. **Gorg** — 14.06 — 99
-- 7. **—** — — 99
-- 8. **—** — — 99
+- 1\. **ssparrow** — 7.17
+- 2\. **ItsIronicIInsist** — 9.56
+- 3\. **Sly** — 11.38
+- 4\. **Slidybat** — 12.57
+- 5\. **hashkitten** — 13.56
+- 6\. **Gorg** — 14.06
 
 # Finals Scoreboard
 ![Finals Scoreboard](/images/finals.png)

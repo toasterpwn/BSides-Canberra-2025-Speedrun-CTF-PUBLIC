@@ -2,7 +2,7 @@
 
 |   Author   | **Round** | **Player 1** | **Player 2** | **Winner** |
 |------------|-------|----------|----------|--------|
-| toasterpwn | Finals     |   hashkitten    | slidybat    | slidybat    |
+| toasterpwn | Finals     |   hashkitten    | SlidyBat    | SlidyBat    |
 
 <details>
   <summary>(SPOILER) Writeup</summary>

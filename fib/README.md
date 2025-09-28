@@ -2,7 +2,7 @@
 
 |   Author   | **Round** | **Player 1** | **Player 2** | **Winner** |
 |------------|-------|----------|----------|--------|
-| toasterpwn | Tiebreaker (Finals)     |   ssparrow    | slidybat    | slidybat    |
+| toasterpwn | Tiebreaker (Finals)     |   ssparrow    | SlidyBat    | SlidyBat    |
 
 <details>
   <summary>(SPOILER) Writeup</summary>
