@@ -34,6 +34,10 @@ Public release for the BSides Canberra 2025 Speedrun CTF.
 - [HexF](https://hexf.me/)
 - [Ghostccamm](https://www.ghostccamm.com/)
 
+## Guest Commentators
+- [Silvio](https://twitter.com/silviocesare)
+- [Louis](https://twitter.com/snyff) 
+
 ## Playtesters
 - [unvariant](https://unvariant.pages.dev/)
 
