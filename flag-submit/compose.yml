@@ -1,0 +1,23 @@
+services:
+  flag-submit:
+    build: .
+    environment:
+      - FLAG=bsides{mysql_master!}
+    ports:
+      - "${PORT:-10000}:1337"
+    networks:
+      - challenge-net
+
+  db:
+    image: mariadb:11.8-noble
+    environment:
+      MARIADB_ROOT_PASSWORD: gonnawhackmykeyboard12389u12893huidsbr2938hr9823
+      MYSQL_USER: dbuser
+      MYSQL_PASSWORD: gonnawhackmykeyboard12389u12893huidsbr2938hr9823
+      MYSQL_DATABASE: flagdb
+    networks:
+      - challenge-net
+
+networks:
+  challenge-net:
+    driver: bridge

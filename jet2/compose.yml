@@ -1,0 +1,23 @@
+services:
+  jet2_server1:
+    build:
+      context: .
+      dockerfile: Dockerfile.server1
+    ports:
+      - "31337:31337"
+    container_name: "jet2_server1"
+
+    restart: unless-stopped
+
+    privileged: true
+  jet2_server2:
+    build:
+      context: .
+      dockerfile: Dockerfile.server2
+    ports:
+      - "31338:31338"
+    container_name: "jet2_server2"
+
+    restart: unless-stopped
+
+    privileged: true

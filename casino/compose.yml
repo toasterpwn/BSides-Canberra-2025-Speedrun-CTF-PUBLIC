@@ -1,0 +1,9 @@
+services:
+  chal:
+    build: .
+    ports:
+      - "${PORT:-10000}:1337"
+    container_name: "casino"
+
+    restart: unless-stopped
+

@@ -1,0 +1,37 @@
+from pwn import *
+from config import REMOTE_ADDR
+
+REMOTE_PORT = 31337
+
+e = context.binary = ELF("./server1")
+
+REMOTE = 0  # Change to 1 to run the exploit on the remote instance
+
+
+def ticket_code(title, first_name, last_name, seat):
+    if REMOTE:
+        p = remote(REMOTE_ADDR, REMOTE_PORT)
+    else:
+        p = e.process()
+
+    p.sendlineafter(b"Title>", str(title).encode())
+    p.sendlineafter(b"First Name>", str(first_name).encode())
+    p.sendlineafter(b"Last Name>", str(last_name).encode())
+    p.sendlineafter(b"Seat>", str(seat).encode())
+
+    p.recvuntil(b"Ticket Code: ")
+    return p.recvline().decode()
+
+
+def verify_ticket(token):
+    if REMOTE:
+        p = remote(REMOTE_ADDR, REMOTE_PORT + 1)
+    else:
+        p = process(["python3", "server2.py"])
+    p.sendline(str(token).encode())
+    return p.recvline()
+
+
+ticket = ticket_code("Madam", "Bingo", "Healer", "1A")
+print(ticket)
+print(verify_ticket(ticket))

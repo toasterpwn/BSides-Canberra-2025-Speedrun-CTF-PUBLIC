@@ -1,0 +1,10 @@
+services:
+  chal:
+    build: .
+    ports:
+      - "${PORT:-10000}:1337"
+    container_name: "numbers"
+
+    restart: unless-stopped
+
+    privileged: true

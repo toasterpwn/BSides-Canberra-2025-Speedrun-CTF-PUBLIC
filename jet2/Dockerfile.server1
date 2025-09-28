@@ -1,0 +1,20 @@
+# FROM ubuntu:24.04 AS builder
+# WORKDIR /app
+# RUN apt-get update && apt-get install -y build-essential gcc libssl-dev
+
+
+# COPY server1.c /app
+# RUN gcc server1.c -o server1 -I/usr/include/openssl -L/usr/lib/x86_64-linux-gnu -lssl -lcrypto -lm
+
+
+FROM ghcr.io/downunderctf/docker-vendor/nsjail:ubuntu-24.04
+ENV EXEC_BIN="./server1"
+ENV EXEC_ARG=""
+ENV PORT=31337
+ENV JAIL_CWD=/chal
+
+# COPY --from=builder /app/server1 /home/ctf/chal
+COPY ./server1 /home/ctf/chal
+COPY ./flag.txt /home/ctf/chal
+
+EXPOSE 31337/tcp
